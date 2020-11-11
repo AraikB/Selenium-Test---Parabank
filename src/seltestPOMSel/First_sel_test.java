@@ -18,23 +18,15 @@ public class First_sel_test {
 		
 		//launch 
 		driver.get("https://parabank.parasoft.com/parabankv2/index.htm");
-		
-		//
-		// driver.findElement(By.xpath("//input[contains(@name,'username')]")).sendKeys("john");
-		//driver.findElement(By.xpath("//input[contains(@name,'password')]")).sendKeys("demo");
+		//login page actions
 		LoginPage loginpage = new LoginPage(driver);
-		
 		loginpage.waitUntilClickable(UserNameField);
-		
 		loginpage.setUsernameField("john");
-		
 		loginpage.setPasswordField("demo");
-		
 		loginpage.clickLogin();
 
+		//accounts overview actions
 		AccountsOverviewPage accountsOverviewPage = new AccountsOverviewPage(driver);
-		
-// 		accountsOverviewPage.clickOpenNewAccount(); 
 		
 		accountsOverviewPage.navigateRequestLoanButton();
 		

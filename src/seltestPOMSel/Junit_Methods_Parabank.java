@@ -64,41 +64,5 @@ public class Junit_Methods_Parabank {
 		//wait 3 sec
 		Thread.sleep(3000);
 	}
-	/*
-	private void loggingIn() throws Throwable {
-		
-		driver.get("https://parabank.parasoft.com/parabankv2/index.htm");
-
-		LoginPage loginpage = new LoginPage(driver);
-
-		loginpage.setUsernameField("john");
-
-		loginpage.setPasswordField("demo");
-
-		loginpage.clickLogin();
-	}
-	
-	private void overview() throws Throwable{
-		AccountsOverviewPage accountsOverviewPage = new AccountsOverviewPage(driver);
-		
- 		accountsOverviewPage.clickOpenNewAccount(); 
-		
-		accountsOverviewPage.navigateRequestLoanButton();	
-	}
-	
-	private void request() throws Throwable{
-		RequestLoansPage requestLoanPage = new RequestLoansPage(driver);
-		requestLoanPage.loanAmountWait(driver);
-		requestLoanPage.setLoanAmountField("1000");
-		
-		requestLoanPage.downPaymentWait(driver);
-		requestLoanPage.setDownPaymentField("100");
-		
-		requestLoanPage.clickApplyNowWait(driver);
-		System.out.print("Successfully opened the website www.parabank.com");
-		
-		//wait 3 sec
-		Thread.sleep(3000);	
-	}*/
 }
 	
